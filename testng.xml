@@ -7,8 +7,8 @@
 
         <test name="Submit order test" >
             <classes>
-                <class name="TestCases.ProductPageTest"/>
                 <class name="TestCases.LoginUser"/>
+                <class name="TestCases.ProductPageTest"/>
             </classes>
         </test>
 </suite>
