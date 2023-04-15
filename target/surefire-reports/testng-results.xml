@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-15T15:52:56 AWST" name="Surefire suite" finished-at="2023-04-15T15:53:15 AWST" duration-ms="19232">
+    <groups>
+    </groups>
+    <test started-at="2023-04-15T15:52:56 AWST" name="Surefire test" finished-at="2023-04-15T15:53:15 AWST" duration-ms="19232">
+      <class name="TestCases.ProductPageTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TestCases.ProductPageTest@1c025cb]" started-at="2023-04-15T15:52:56 AWST" name="launchApp" finished-at="2023-04-15T15:53:03 AWST" duration-ms="6967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="checkOutProduct()[pri:0, instance:TestCases.ProductPageTest@1c025cb]" started-at="2023-04-15T15:53:03 AWST" name="checkOutProduct" description="Choose Sauce Labs Jacket" finished-at="2023-04-15T15:53:15 AWST" duration-ms="11220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.ProductPageTest@1c025cb]" started-at="2023-04-15T15:53:15 AWST" name="tearDown" finished-at="2023-04-15T15:53:15 AWST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.ProductPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

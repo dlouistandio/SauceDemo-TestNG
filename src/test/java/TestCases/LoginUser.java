@@ -1,8 +1,7 @@
 package TestCases;
 
-import PageObjects.LoginPage;
 import PageObjects.ProductPage;
-import TestComponents.BaseTest;
+import Utils.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,7 +18,7 @@ public class LoginUser extends BaseTest {
     public void loginInvalidUser(){
         loginPage.loginUser("standard_user","invalid");
         String alertText = loginPage.getAlertText();
-        Assert.assertEquals(alertText, "Epic sadface: Username and password do not match any user in this service");
+        Assert.assertEquals(alertText, "Epic sadface: Username and password dos not match any user in this service");
     }
 
 }

@@ -2,6 +2,7 @@ package PageObjects;
 
 import Components.GeneralObject;
 import com.github.dockerjava.api.model.Driver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,16 +36,19 @@ public class ProductPage extends GeneralObject {
         return productPageHeader.getText();
     }
 
+    @Step
     public List<WebElement> getProductList(){
         waitElementsDisplay(products);
         return productList;
     }
 
+    @Step
     public WebElement getProductByName(String name){
         WebElement prod = getProductList().stream().filter(products -> products.findElement(productName).getText().equals(name)).findFirst().orElse(null);
         return prod;
     }
 
+    @Step
     public void addProductToCart(String name){
         WebElement prod = getProductByName(name);
         prod.findElement(addToCart).click();

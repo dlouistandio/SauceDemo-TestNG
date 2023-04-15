@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Components.GeneralObject;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,6 +28,7 @@ public class LoginPage extends GeneralObject {
     @FindBy(xpath = "//div[@class='error-message-container error']/h3")
     private WebElement alertText;
 
+    @Step
     public ProductPage loginUser(String user, String pass){
         usernameField.sendKeys(user);
         passwordField.sendKeys(pass);
@@ -35,6 +37,7 @@ public class LoginPage extends GeneralObject {
         return productPage;
     }
 
+    @Step
     public String getAlertText(){
         return alertText.getText();
     }
