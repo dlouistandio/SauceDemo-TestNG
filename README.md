@@ -6,7 +6,7 @@ Hello! This is a project Web Automation with study case [Sauce Demo](https://www
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Test Case
+## Test Cases
 ....
 
 ### Prerequisites
