@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -28,9 +29,13 @@ public class ProductPage extends GeneralObject {
     @FindBy(xpath = "//div[@class='inventory_item']")
     private WebElement products;
 
+    @FindBy(xpath = "//select[@class='product_sort_container']")
+    private WebElement sortList;
+
     By productName = By.cssSelector(".inventory_item_name");
 
     By addToCart = By.cssSelector(".btn_inventory");
+
 
     public String getHeaderText(){
         return productPageHeader.getText();
@@ -52,6 +57,13 @@ public class ProductPage extends GeneralObject {
     public void addProductToCart(String name){
         WebElement prod = getProductByName(name);
         prod.findElement(addToCart).click();
+    }
+
+    @Step
+    public void selectSortList(String sortName){
+        waitElementsDisplay(sortList);
+        Select dropdown = new Select(sortList);
+        dropdown.selectByVisibleText(sortName);
     }
 
 }

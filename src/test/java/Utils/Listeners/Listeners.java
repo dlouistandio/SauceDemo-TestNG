@@ -39,7 +39,7 @@ public class Listeners extends BaseTest implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
-        Object testClass = iTestResult.getInstance();
+
         WebDriver driver = null;
         try {
             driver = (WebDriver) iTestResult.getTestClass().getRealClass().getField("driver")
