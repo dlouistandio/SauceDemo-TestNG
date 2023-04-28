@@ -2,13 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
     <listeners>
-        <listener class-name="Utils.Listeners.Listeners"/>
+        <listener class-name="com.test.Utils.Listeners.Listeners"/>
     </listeners>
 
         <test name="Submit order test" >
             <classes>
-                <class name="TestCases.LoginUser"/>
-                <class name="TestCases.ProductPageTest"/>
+                <class name="com.test.TestCase.ProductPageTest"/>
+                <class name="com.test.TestCase.LoginUser"/>
             </classes>
+
         </test>
 </suite>

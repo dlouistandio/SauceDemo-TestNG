@@ -1,0 +1,11 @@
+[INFO ] 2023-04-28 12:54:35.030 LoginPage:33 - Username Is standard_user
+[INFO ] 2023-04-28 12:54:35.321 LoginPage:35 - Password Is secret_sauce
+[INFO ] 2023-04-28 12:54:35.668 ProductPage:45 - Get Product list
+[INFO ] 2023-04-28 12:54:35.759 ProductPage:45 - Get Product list
+[INFO ] 2023-04-28 12:54:35.985 ProductPage:53 - Get product name Sauce Labs Fleece Jacket
+[INFO ] 2023-04-28 12:54:36.058 ProductPage:61 - Add product to cart Sauce Labs Fleece Jacket
+[INFO ] 2023-04-28 12:54:44.705 LoginPage:33 - Username Is standard_user
+[INFO ] 2023-04-28 12:54:45.056 LoginPage:35 - Password Is invalid
+[INFO ] 2023-04-28 12:54:45.460 LoginPage:42 - Get alert text
+[INFO ] 2023-04-28 12:54:49.828 LoginPage:33 - Username Is standard_user
+[INFO ] 2023-04-28 12:54:50.244 LoginPage:35 - Password Is secret_sauce
