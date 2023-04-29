@@ -1,26 +1,40 @@
 name: allure-maven
 
-on: [ push ]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up JDK 11
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3.1.0
         with:
           java-version: '11'
-          distribution: 'adopt'
+          distribution: 'zulu'
+          
+      - uses: docker-practice/actions-setup-docker@master
+      - name: Run the test
+        run: |
+          set -x
 
-      - name: Run Test
-        if: always()
-        run: mvn clean test
-        continue-on-error: true
+          docker version
+
+          docker-compose -f docker-compose.yml up -d
+          
+          IP_HUB=`docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' selenium-hub`
+          
+          mvn clean test -Drunning-on-hub=true -DurlHub=http://$IP_HUB:4444/wd/hub
 
       - name: Get Allure history
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
@@ -28,7 +42,7 @@ jobs:
           path: main
 
       - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@main
+        uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
         with:
