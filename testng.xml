@@ -6,6 +6,12 @@
     </listeners>
 
         <test name="Submit order test" >
+            <groups>
+                <run>
+                    <include name="login"></include>
+                    <include name="product"></include>
+                </run>
+            </groups>
             <classes>
                 <class name="com.test.TestCase.ProductPageTest"/>
                 <class name="com.test.TestCase.LoginUser"/>

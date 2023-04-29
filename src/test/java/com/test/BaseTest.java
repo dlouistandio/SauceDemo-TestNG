@@ -25,6 +25,7 @@ public class BaseTest{
     public ProductPage productPage;
     public CartPage cartPage;
 
+
     public WebDriver initDriver() throws IOException {
         Properties props = new Properties();
         DesiredCapabilities caps = new DesiredCapabilities();

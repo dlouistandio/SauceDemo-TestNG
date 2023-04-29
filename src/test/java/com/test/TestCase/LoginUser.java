@@ -14,8 +14,8 @@ public class LoginUser extends BaseTest {
     @Issue("1")
     @TmsLink("TMS Link")
     @Description("Login User with valid id and password")
-    @Test( description = "Login valid user")
-    public void loginValidUser(){
+    @Test( description = "Login valid user", groups = { "login" })
+    public void loginValidUser() {
         loginPage.loginUser("standard_user","secret_sauce");
         String headerText = productPage.getHeaderText();
         Assert.assertEquals(headerText, "Products");
@@ -26,7 +26,7 @@ public class LoginUser extends BaseTest {
     @Issue("1")
     @TmsLink("TMS Link")
     @Description("Login User with invalid id and password")
-    @Test( description = "Login invalid user")
+    @Test( description = "Login invalid user", groups = { "login" })
     public void loginInvalidUser(){
         loginPage.loginUser("standard_user","invalid");
         String alertText = loginPage.getAlertText();

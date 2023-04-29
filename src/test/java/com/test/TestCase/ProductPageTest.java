@@ -17,7 +17,7 @@ public class ProductPageTest extends BaseTest {
     @Issue("12")
     @TmsLink("TMS Link")
     @Description("User add sauce lab jacket to cart")
-    @Test( description = "Choose Sauce Labs Jacket")
+    @Test( description = "Choose Sauce Labs Jacket", groups = { "product" })
     public void checkOutProduct() throws InterruptedException {
         loginPage.loginUser("standard_user", "secret_sauce");
         List<WebElement> products = productPage.getProductList();
