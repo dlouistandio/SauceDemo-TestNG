@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"skipped","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","0","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","loginInvalidUser","Login invalid user","Login User with invalid id and password"
+"skipped","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","0","Suite","Submit order test","com.test.TestCase.ProductPageTest","com.test.TestCase.ProductPageTest","checkOutProduct","Choose Sauce Labs Jacket","User add sauce lab jacket to cart"
+"broken","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","4","Suite","Submit order test","com.test.TestCase.ProductPageTest","com.test.TestCase.ProductPageTest","launchApp","launchApp",""
+"broken","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","1","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","launchApp","launchApp",""
+"skipped","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","0","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","loginValidUser","Login valid user","Login User with valid id and password"
+"broken","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","0","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","tearDown","tearDown",""
+"broken","Sat Apr 29 09:21:15 GMT 2023","Sat Apr 29 09:21:15 GMT 2023","0","Suite","Submit order test","com.test.TestCase.ProductPageTest","com.test.TestCase.ProductPageTest","tearDown","tearDown",""
