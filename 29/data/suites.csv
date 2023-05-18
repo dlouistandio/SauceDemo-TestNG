@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 18 17:10:44 GMT 2023","Thu May 18 17:10:45 GMT 2023","576","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","loginValidUser","Login valid user","Login User with valid id and password"
+"passed","Thu May 18 17:10:42 GMT 2023","Thu May 18 17:10:49 GMT 2023","7341","Suite","Submit order test","com.test.TestCase.ProductPageTest","com.test.TestCase.ProductPageTest","checkOutProduct","Choose Sauce Labs Jacket","User add sauce lab jacket to cart"
+"passed","Thu May 18 17:10:42 GMT 2023","Thu May 18 17:10:42 GMT 2023","878","Suite","Submit order test","com.test.TestCase.LoginUser","com.test.TestCase.LoginUser","loginInvalidUser","Login invalid user","Login User with invalid id and password"
